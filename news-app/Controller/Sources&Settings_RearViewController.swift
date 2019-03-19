@@ -8,23 +8,57 @@
 
 import UIKit
 
-class Sources_Settings_RearViewController: UIViewController {
+class Sources_Settings_RearViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+
+    //MARK:- Outlets
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    //MARK:- Properties
+    
+    
+    
+    
+    
+    
+    //MARK:- LoadUp Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //TableView load
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    //MARK:- TableView functions
+    //Number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    //Content of rows
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK:- Buttons
+    @IBAction func settingsWhenPressed(_ sender: UIButton) {
     }
-    */
+    
+    
+    
+    
+    
+    
 
 }
