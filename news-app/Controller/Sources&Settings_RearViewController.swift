@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Sources_Settings_RearViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Sources_Settings_RearViewController: UIViewController {
 
     
 
@@ -28,9 +28,6 @@ class Sources_Settings_RearViewController: UIViewController, UITableViewDelegate
         super.viewDidLoad()
 
         //TableView load
-        tableView.delegate = self
-        tableView.dataSource = self
-        
         
         
         
@@ -38,22 +35,9 @@ class Sources_Settings_RearViewController: UIViewController, UITableViewDelegate
         
     }
     
-    
-    //MARK:- TableView functions
-    //Number of rows
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    //Content of rows
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
-    }
     
 
-    //MARK:- Buttons
-    @IBAction func settingsWhenPressed(_ sender: UIButton) {
-    }
+
     
     
     

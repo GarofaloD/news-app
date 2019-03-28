@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,75 +38,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCF-Df-Tgn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-Zh-LwW">
+                                        <rect key="frame" x="8" y="54.666666666666657" width="170.66666666666666" height="41.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="soe-IS-wBY"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kdd-Zh-LwW" secondAttribute="bottom" constant="8" id="5Ke-nF-HUG"/>
+                                    <constraint firstAttribute="height" constant="104" id="LMI-1m-55C"/>
+                                    <constraint firstItem="Kdd-Zh-LwW" firstAttribute="leading" secondItem="RCF-Df-Tgn" secondAttribute="leading" constant="8" id="nrl-pN-CeB"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-Zh-LwW">
-                                <rect key="frame" x="10" y="54" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Ka-aN-PeA">
-                                <rect key="frame" x="0.0" y="139" width="414" height="660"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Nyo-YW-HuY">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Nyo-YW-HuY" id="ZcQ-wI-JyL">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmh-fN-TTn">
-                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdm-wU-gUy">
-                                <rect key="frame" x="25" y="815" width="57" height="30"/>
+                                <rect key="frame" x="25" y="803" width="99" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsWhenPressed:" destination="otj-f1-Ges" eventType="touchUpInside" id="UP0-cs-vBq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9A-YJ-LAg">
-                                <rect key="frame" x="11" y="102" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9A-YJ-LAg">
+                                <rect key="frame" x="20" y="135" width="130.66666666666666" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fny-bo-X3t">
+                                <rect key="frame" x="30" y="209" width="138" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke9-Dp-gUS">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Top Stories"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yag-iK-zch">
+                                        <rect key="frame" x="0.0" y="64" width="100" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="National"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ON-cb-bOE">
+                                        <rect key="frame" x="0.0" y="128" width="110" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Business"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wN-FS-w9y">
+                                        <rect key="frame" x="0.0" y="192" width="97" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Science"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dG-hG-tTb">
+                                        <rect key="frame" x="0.0" y="256" width="79" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Health"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tqh-rH-m9o">
+                                        <rect key="frame" x="0.0" y="320" width="138" height="44"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Technology"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2Ka-aN-PeA" firstAttribute="leading" secondItem="CRL-aG-QJi" secondAttribute="leading" id="4Fv-d6-F11"/>
-                            <constraint firstItem="2Ka-aN-PeA" firstAttribute="top" secondItem="RCF-Df-Tgn" secondAttribute="bottom" constant="55" id="4cA-jc-35t"/>
-                            <constraint firstItem="h9A-YJ-LAg" firstAttribute="top" secondItem="RCF-Df-Tgn" secondAttribute="bottom" constant="18" id="E3o-WT-MrM"/>
-                            <constraint firstItem="CRL-aG-QJi" firstAttribute="trailing" secondItem="2Ka-aN-PeA" secondAttribute="trailing" id="NiJ-S8-dqO"/>
                             <constraint firstItem="pdm-wU-gUy" firstAttribute="leading" secondItem="CRL-aG-QJi" secondAttribute="leading" constant="25" id="PE9-Cr-pBL"/>
-                            <constraint firstItem="h9A-YJ-LAg" firstAttribute="leading" secondItem="CRL-aG-QJi" secondAttribute="leading" constant="11" id="T4J-ho-bKJ"/>
                             <constraint firstItem="CRL-aG-QJi" firstAttribute="trailing" secondItem="RCF-Df-Tgn" secondAttribute="trailing" id="fG7-83-xAE"/>
-                            <constraint firstItem="RCF-Df-Tgn" firstAttribute="top" secondItem="CRL-aG-QJi" secondAttribute="top" id="hXj-rW-yUZ"/>
+                            <constraint firstItem="RCF-Df-Tgn" firstAttribute="top" secondItem="C5Y-ib-D4q" secondAttribute="top" id="iwH-qc-Vxy"/>
                             <constraint firstItem="CRL-aG-QJi" firstAttribute="bottom" secondItem="pdm-wU-gUy" secondAttribute="bottom" constant="17" id="jSy-84-sk7"/>
                             <constraint firstItem="RCF-Df-Tgn" firstAttribute="leading" secondItem="CRL-aG-QJi" secondAttribute="leading" id="srd-QZ-5m0"/>
-                            <constraint firstItem="pdm-wU-gUy" firstAttribute="top" secondItem="2Ka-aN-PeA" secondAttribute="bottom" constant="16" id="z2R-kN-2nS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CRL-aG-QJi"/>
                     </view>
-                    <connections>
-                        <outlet property="tableView" destination="2Ka-aN-PeA" id="0nh-MA-mie"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s7w-rF-baB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,46 +129,346 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-R4-tZf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-R4-tZf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-mj-wLq">
-                                        <rect key="frame" x="164" y="10" width="86" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="selectedCategory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-mj-wLq">
+                                        <rect key="frame" x="120" y="58" width="174" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV4-WX-cs1">
-                                        <rect key="frame" x="8" y="7" width="25" height="26"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mG2-AE-bF3">
+                                        <rect key="frame" x="8" y="50" width="47" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="smackBurger"/>
+                                        <state key="normal" image="ecommerce-collection-outlines-23-512"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hAt-Su-B4L"/>
+                                    <constraint firstAttribute="height" constant="50" id="hAt-Su-B4L"/>
                                 </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-dx-bau">
+                                <rect key="frame" x="0.0" y="94" width="414" height="726"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FFl-sp-MaI">
+                                    <size key="itemSize" width="414" height="480"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsCell" id="Zzs-TA-Q8e">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ULb-HB-SJA">
+                                                    <rect key="frame" x="0.0" y="20" width="414" height="246"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yps-cG-4KM">
+                                                    <rect key="frame" x="8" y="373" width="399" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Sometimes we are rebuilding a RAID array or replacing a BIOS chip and we wonder how ordinary people keep their computes running. Then we realize that most of them come to someone like us for help. …</string>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="newsDate" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHD-05-uAL">
+                                                    <rect key="frame" x="311" y="339" width="83" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By: Al Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5C-sv-ole">
+                                                    <rect key="frame" x="9" y="344" width="107" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hackday.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17r-jN-ww0">
+                                                    <rect key="frame" x="156" y="343" width="101" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Office Depot And OfficeMax Find Malware That Isn't There - Hackaday" lineBreakMode="characterWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0N2-Vk-Zl6">
+                                                    <rect key="frame" x="14" y="270" width="386" height="64"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-x8-2tH">
+                                <rect key="frame" x="0.0" y="828" width="414" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV4-WX-cs1">
+                                        <rect key="frame" x="184" y="0.0" width="47" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu_-512"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="AdM-dx-bau" firstAttribute="trailing" secondItem="AfN-Ty-CmW" secondAttribute="trailing" id="8Au-4V-h8Z"/>
                             <constraint firstItem="AfN-Ty-CmW" firstAttribute="trailing" secondItem="VlW-R4-tZf" secondAttribute="trailing" id="HM6-8r-Nqp"/>
                             <constraint firstItem="VlW-R4-tZf" firstAttribute="leading" secondItem="AfN-Ty-CmW" secondAttribute="leading" id="dPD-dW-Iga"/>
                             <constraint firstItem="VlW-R4-tZf" firstAttribute="top" secondItem="AfN-Ty-CmW" secondAttribute="top" id="ho7-9C-6DU"/>
+                            <constraint firstItem="AdM-dx-bau" firstAttribute="leading" secondItem="AfN-Ty-CmW" secondAttribute="leading" id="ibJ-Fz-Tx8"/>
+                            <constraint firstItem="AdM-dx-bau" firstAttribute="top" secondItem="VlW-R4-tZf" secondAttribute="bottom" id="yRm-fz-95T"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AfN-Ty-CmW"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="AdM-dx-bau" id="dI6-js-sO3"/>
                         <outlet property="menuButton" destination="mV4-WX-cs1" id="WET-Ch-dbE"/>
+                        <segue destination="YLn-o4-Jwj" kind="show" identifier="goToNewsDescription" id="8eQ-Ny-Yoe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NaO-oS-fEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076.8115942028987" y="560.49107142857144"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="35V-lv-4f2">
+            <objects>
+                <viewController id="YLn-o4-Jwj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HSa-xp-gU4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-4K-YOc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="99"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NR-q7-JjY">
+                                        <rect key="frame" x="8" y="63" width="33" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Arrow-Back-3-icon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="p7w-yM-hUa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="apc-AN-E0e">
+                                <rect key="frame" x="0.0" y="828" width="414" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIp-uL-cYM">
+                                        <rect key="frame" x="184" y="0.0" width="47" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="menu_-512"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-TV-Pxg">
+                                <rect key="frame" x="0.0" y="99" width="414" height="721"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wy5-r6-ldY">
+                                        <rect key="frame" x="8" y="8" width="398" height="251"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="newsDate" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5YJ-HR-i5h">
+                                        <rect key="frame" x="314" y="336" width="83" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By: Al Williams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiS-dq-GnJ">
+                                        <rect key="frame" x="12" y="341" width="107" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hackday.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVv-un-hK4">
+                                        <rect key="frame" x="159" y="340" width="101" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Office Depot And OfficeMax Find Malware That Isn't There - Hackaday" lineBreakMode="characterWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9t-YW-Iuc">
+                                        <rect key="frame" x="17" y="267" width="386" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYT-W7-YHA">
+                                        <rect key="frame" x="12" y="383" width="385" height="330"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Daniels-MBP-2:news-app danielgarofalo$ git checkout -b Session2.UI_Building_I
+M	news-app/Base.lproj/Main.storyboard
+Switched to a new branch 'Session2.UI_Building_I'
+Daniels-MBP-2:news-app danielgarofalo$ git add -A
+Daniels-MBP-2:news-app danielgarofalo$ git commit -m "Tableview on categories VC"
+[Session2.UI_Building_I 3095da4] Tableview on categories VC
+ Committer: Daniel Garofalo &lt;danielgarofalo@daniels-mbp-2.home&gt;
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 133 insertions(+), 31 deletions(-)
+ rewrite news-app/Controller/Sources&amp;Settings_RearViewController.swift (63%)
+Daniels-MBP-2:news-app danielgarofalo$ git push origin Session2.UI_Building_I
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 3.66 KiB | 3.66 MiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'Session2.UI_Building_I' on GitHub by visiting:
+remote:      https://github.com/GarofaloD/news-app/pull/new/Session2.UI_Building_I
+remote: 
+To https://github.com/GarofaloD/news-app.git
+ * [new branch]      Session2.UI_Building_I -&gt; Session2.UI_Building_I
+Daniels-MBP-2:news-app danielgarofalo$ 
+  [Restored Mar 19, 2019 at 6:29:20 PM]
+Last login: Tue Mar 19 18:29:16 on console
+Daniels-MBP-2:news-app danielgarofalo$ 
+  [Restored Mar 22, 2019 at 4:35:27 PM]
+Last login: Fri Mar 22 16:35:24 on console
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ git status
+On branch Session2.UI_Building_I
+Changes to be committed:
+  (use "git reset HEAD &lt;file&gt;..." to unstage)
+
+	new file:   news-app/Assets.xcassets/1-48-512.imageset/1-48-512.png
+	new file:   news-app/Assets.xcassets/1-48-512.imageset/Contents.json
+	new file:   news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/490px-Magnifying_glass_icon.png
+	new file:   news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/Contents.json
+	new file:   news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Contents.json
+	new file:   news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Magnifi-Glass-512.png
+	new file:   news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/Contents.json
+	new file:   news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/ecommerce-collection-outlines-23-512.png
+	new file:   news-app/Assets.xcassets/menu_-512.imageset/Contents.json
+	new file:   news-app/Assets.xcassets/menu_-512.imageset/menu_-512.png
+
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	modified:   news-app.xcodeproj/project.pbxproj
+	modified:   news-app/Base.lproj/Main.storyboard
+	modified:   news-app/Controller/Sources&amp;Settings_RearViewController.swift
+
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ git checkout -b Session3.UI_Building_II
+M	news-app.xcodeproj/project.pbxproj
+A	news-app/Assets.xcassets/1-48-512.imageset/1-48-512.png
+A	news-app/Assets.xcassets/1-48-512.imageset/Contents.json
+A	news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/490px-Magnifying_glass_icon.png
+A	news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/Contents.json
+A	news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Contents.json
+A	news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Magnifi-Glass-512.png
+A	news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/Contents.json
+A	news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/ecommerce-collection-outlines-23-512.png
+A	news-app/Assets.xcassets/menu_-512.imageset/Contents.json
+A	news-app/Assets.xcassets/menu_-512.imageset/menu_-512.png
+M	news-app/Base.lproj/Main.storyboard
+M	news-app/Controller/Sources&amp;Settings_RearViewController.swift
+Switched to a new branch 'Session3.UI_Building_II'
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ git commit -m "Categories icons / icons for search / First stage of Collection view"
+[Session3.UI_Building_II 2648df0] Categories icons / icons for search / First stage of Collection view
+ Committer: Daniel Garofalo &lt;danielgarofalo@daniels-mbp-2.home&gt;
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 10 files changed, 105 insertions(+)
+ create mode 100644 news-app/Assets.xcassets/1-48-512.imageset/1-48-512.png
+ create mode 100644 news-app/Assets.xcassets/1-48-512.imageset/Contents.json
+ create mode 100644 news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/490px-Magnifying_glass_icon.png
+ create mode 100644 news-app/Assets.xcassets/490px-Magnifying_glass_icon.imageset/Contents.json
+ create mode 100644 news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Contents.json
+ create mode 100644 news-app/Assets.xcassets/Magnifi-Glass-512.imageset/Magnifi-Glass-512.png
+ create mode 100644 news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/Contents.json
+ create mode 100644 news-app/Assets.xcassets/ecommerce-collection-outlines-23-512.imageset/ecommerce-collection-outlines-23-512.png
+ create mode 100644 news-app/Assets.xcassets/menu_-512.imageset/Contents.json
+ create mode 100644 news-app/Assets.xcassets/menu_-512.imageset/menu_-512.png
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ git push origin Session3.UI_Building_II
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 69.30 KiB | 13.86 MiB/s, done.
+Total 19 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'Session3.UI_Building_II' on GitHub by visiting:
+remote:      https://github.com/GarofaloD/news-app/pull/new/Session3.UI_Building_II
+remote: 
+To https://github.com/GarofaloD/news-app.git
+ * [new branch]      Session3.UI_Building_II -&gt; Session3.UI_Building_II
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ git checkout -b Session04.UI_building_III
+M	news-app.xcodeproj/project.pbxproj
+A	news-app/Assets.xcassets/Arrow-Back-3-icon.imageset/Arrow-Back-3-icon.png
+A	news-app/Assets.xcassets/Arrow-Back-3-icon.imageset/Contents.json
+M	news-app/Base.lproj/Main.storyboard
+M	news-app/Controller/NewsFeed_FrontViewController.swift
+M	news-app/Controller/Sources&amp;Settings_RearViewController.swift
+A	news-app/View/NewsCell.swift
+Switched to a new branch 'Session04.UI_building_III'
+Daniels-MacBook-Pro-2:news-app danielgarofalo$ </string>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g7f-zr-wjy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9R-b0-taQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2139.130434782609" y="557.8125"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="smackBurger" width="40" height="40"/>
+        <image name="Arrow-Back-3-icon" width="256" height="256"/>
+        <image name="ecommerce-collection-outlines-23-512" width="512" height="512"/>
+        <image name="menu_-512" width="512" height="512"/>
     </resources>
 </document>

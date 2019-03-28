@@ -13,6 +13,7 @@
 		8C038D41223944490017410E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C038D40223944490017410E /* Assets.xcassets */; };
 		8C038D44223944490017410E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C038D42223944490017410E /* LaunchScreen.storyboard */; };
 		8C038D52223944AF0017410E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038D51223944AF0017410E /* Constants.swift */; };
+		8C193BA4224C3C860060204D /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C193BA3224C3C860060204D /* NewsCell.swift */; };
 		8C5126DD223BE00B007F8CFE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126DB223BE00B007F8CFE /* SWRevealViewController.m */; };
 		8C5126E1223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126E0223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift */; };
 		8C5126E3223BE326007F8CFE /* Sources&Settings_RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126E2223BE326007F8CFE /* Sources&Settings_RearViewController.swift */; };
@@ -29,6 +30,7 @@
 		8C038D43223944490017410E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C038D45223944490017410E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C038D51223944AF0017410E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C193BA3224C3C860060204D /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		8C5126DA223BE00B007F8CFE /* news-app-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "news-app-Bridging-Header.h"; sourceTree = "<group>"; };
 		8C5126DB223BE00B007F8CFE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8C5126DC223BE00B007F8CFE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		8C038D35223944480017410E /* news-app */ = {
 			isa = PBXGroup;
 			children = (
+				8C193B9D224BAA930060204D /* Extensions */,
 				8C038D502239449E0017410E /* Supporting files */,
 				8C038D4F223944980017410E /* Utilities */,
 				8C038D4E223944920017410E /* Services */,
@@ -107,6 +110,7 @@
 		8C038D4C2239447C0017410E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C193BA3224C3C860060204D /* NewsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +145,13 @@
 				8C5126DA223BE00B007F8CFE /* news-app-Bridging-Header.h */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		8C193B9D224BAA930060204D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C1BB75C39341889E8CA2D133 /* Pods */ = {
@@ -282,6 +293,7 @@
 				8C038D37223944480017410E /* AppDelegate.swift in Sources */,
 				8C5126DD223BE00B007F8CFE /* SWRevealViewController.m in Sources */,
 				8C038D3F223944480017410E /* news_app.xcdatamodeld in Sources */,
+				8C193BA4224C3C860060204D /* NewsCell.swift in Sources */,
 				8C038D52223944AF0017410E /* Constants.swift in Sources */,
 				8C5126E1223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift in Sources */,
 				8C5126E3223BE326007F8CFE /* Sources&Settings_RearViewController.swift in Sources */,

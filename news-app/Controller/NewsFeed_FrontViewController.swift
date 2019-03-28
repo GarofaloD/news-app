@@ -8,10 +8,13 @@
 
 import UIKit
 
-class NewsFeed_FrontViewController: UIViewController {
+class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    
 
     //MARK:- OUTLETS
     @IBOutlet weak var menuButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     
     //MARK:- PROPERTIES
@@ -25,10 +28,13 @@ class NewsFeed_FrontViewController: UIViewController {
 
         //Reveal rear view controller
         menuButton.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-        
-        //
+        //Gesture manager for slide VC
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
+        //CollectionView Load
+        collectionView.dataSource = self
+        collectionView.delegate = self
         
         
         
@@ -37,5 +43,27 @@ class NewsFeed_FrontViewController: UIViewController {
     
 
 
+    //MARK:- Collection Vie Functions
+    //Number of items
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    //Content of Items
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newsCell", for: indexPath) as? UICollectionViewCell {
+            return cell
+        } else {
+            return UICollectionViewCell()
+        }
+        
+        
+        
+        
+
+    }
+    
+    
+    
 
 }
