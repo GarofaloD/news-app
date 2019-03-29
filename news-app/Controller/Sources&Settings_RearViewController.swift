@@ -37,7 +37,12 @@ class Sources_Settings_RearViewController: UIViewController {
     
     
 
-
+    //MARK:- Table Functions
+    //MARK:- Load Up Functions
+    //MARK:- Custom Functions
+    //MARK:- Properties
+    //MARK:- Outlets
+    //MARK:- Buttons
     
     
     

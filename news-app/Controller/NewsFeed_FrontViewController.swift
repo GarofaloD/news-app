@@ -15,6 +15,12 @@ class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, 
     //MARK:- OUTLETS
     @IBOutlet weak var menuButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var newsTitle: UILabel!
+    @IBOutlet weak var newsAuthor: UILabel!
+    @IBOutlet weak var newsSource: UILabel!
+    @IBOutlet weak var newsDate: UILabel!
+    @IBOutlet weak var newsDescription: UILabel!
     
     
     //MARK:- PROPERTIES
@@ -43,7 +49,7 @@ class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, 
     
 
 
-    //MARK:- Collection Vie Functions
+    //MARK:- Collection View Functions
     //Number of items
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
@@ -64,6 +70,12 @@ class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, 
     }
     
     
+    
+    
+    
+
+
+
     
 
 }
