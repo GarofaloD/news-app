@@ -43,6 +43,17 @@ class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, 
         collectionView.delegate = self
         
         
+        NewsFetchingDataService.instance.getTopHeadlines { (success) in
+            if success {
+                
+            } else {
+                
+            }
+        }
+        
+        
+        
+        
         
         
     }

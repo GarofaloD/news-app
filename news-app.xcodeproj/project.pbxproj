@@ -17,8 +17,10 @@
 		8C5126DD223BE00B007F8CFE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126DB223BE00B007F8CFE /* SWRevealViewController.m */; };
 		8C5126E1223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126E0223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift */; };
 		8C5126E3223BE326007F8CFE /* Sources&Settings_RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5126E2223BE326007F8CFE /* Sources&Settings_RearViewController.swift */; };
+		8CCCE77D2256396C00DF9667 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCE77C2256396C00DF9667 /* News.swift */; };
 		8CEEED5D224E4F8300D80825 /* NewsDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEEED5C224E4F8300D80825 /* NewsDefinitionViewController.swift */; };
 		8CEEED5F224E4F9400D80825 /* SearchNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEEED5E224E4F9400D80825 /* SearchNewsViewController.swift */; };
+		8CEEED61224EDB7500D80825 /* NewsFetchingDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CEEED60224EDB7500D80825 /* NewsFetchingDataService.swift */; };
 		9B9CDD2FD711BC4C3B5BFB91 /* Pods_news_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8011DCAE0CCEB7338FE364 /* Pods_news_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +40,10 @@
 		8C5126DC223BE00B007F8CFE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		8C5126E0223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed_FrontViewController.swift; sourceTree = "<group>"; };
 		8C5126E2223BE326007F8CFE /* Sources&Settings_RearViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources&Settings_RearViewController.swift"; sourceTree = "<group>"; };
+		8CCCE77C2256396C00DF9667 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		8CEEED5C224E4F8300D80825 /* NewsDefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDefinitionViewController.swift; sourceTree = "<group>"; };
 		8CEEED5E224E4F9400D80825 /* SearchNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsViewController.swift; sourceTree = "<group>"; };
+		8CEEED60224EDB7500D80825 /* NewsFetchingDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFetchingDataService.swift; sourceTree = "<group>"; };
 		ABA7A2F2C58228B28D08C74C /* Pods-news-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news-app.release.xcconfig"; path = "Target Support Files/Pods-news-app/Pods-news-app.release.xcconfig"; sourceTree = "<group>"; };
 		FBF1993BCF28E802C03088EC /* Pods-news-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-news-app.debug.xcconfig"; path = "Target Support Files/Pods-news-app/Pods-news-app.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +128,7 @@
 		8C038D4D223944810017410E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8CCCE77C2256396C00DF9667 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		8C038D4E223944920017410E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8CEEED60224EDB7500D80825 /* NewsFetchingDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -302,8 +308,10 @@
 				8CEEED5D224E4F8300D80825 /* NewsDefinitionViewController.swift in Sources */,
 				8C038D3F223944480017410E /* news_app.xcdatamodeld in Sources */,
 				8C193BA4224C3C860060204D /* NewsCell.swift in Sources */,
+				8CCCE77D2256396C00DF9667 /* News.swift in Sources */,
 				8C038D52223944AF0017410E /* Constants.swift in Sources */,
 				8C5126E1223BE2FA007F8CFE /* NewsFeed_FrontViewController.swift in Sources */,
+				8CEEED61224EDB7500D80825 /* NewsFetchingDataService.swift in Sources */,
 				8C5126E3223BE326007F8CFE /* Sources&Settings_RearViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

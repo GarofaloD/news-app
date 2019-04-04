@@ -194,7 +194,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsCell" id="Zzs-TA-Q8e">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="newsCell" id="Zzs-TA-Q8e" customClass="NewsCell" customModule="news_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="429"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -259,6 +259,14 @@
                                             <constraint firstAttribute="trailing" secondItem="yps-cG-4KM" secondAttribute="trailing" constant="7" id="sWi-23-x4a"/>
                                             <constraint firstItem="b4I-Xx-yMU" firstAttribute="leading" secondItem="Zzs-TA-Q8e" secondAttribute="leadingMargin" constant="8" id="v9G-iK-555"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="newsAuthor" destination="t5C-sv-ole" id="Vjy-gQ-F3f"/>
+                                            <outlet property="newsDate" destination="hHD-05-uAL" id="Ivv-H1-tf4"/>
+                                            <outlet property="newsDescription" destination="yps-cG-4KM" id="dOw-fh-mt6"/>
+                                            <outlet property="newsImage" destination="ULb-HB-SJA" id="HsT-Wq-Eri"/>
+                                            <outlet property="newsSource" destination="17r-jN-ww0" id="kuc-4B-TxQ"/>
+                                            <outlet property="newsTitle" destination="0N2-Vk-Zl6" id="848-RF-Iwg"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
