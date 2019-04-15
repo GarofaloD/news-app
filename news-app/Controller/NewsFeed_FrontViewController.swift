@@ -63,12 +63,14 @@ class NewsFeed_FrontViewController: UIViewController, UICollectionViewDelegate, 
     //MARK:- Collection View Functions
     //Number of items
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return NewsFetchingDataService.instance.getHeadlines().count
     }
     
     //Content of Items
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newsCell", for: indexPath) as? UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newsCell", for: indexPath) as? NewsCell {
+            let newsToDisplay = NewsFetchingDataService.instance.getHeadlines()[indexPath.row]
+            cell.updateNewsCell(newsItem: newsToDisplay)
             return cell
         } else {
             return UICollectionViewCell()

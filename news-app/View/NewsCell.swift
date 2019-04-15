@@ -21,6 +21,14 @@ class NewsCell: UICollectionViewCell {
     @IBOutlet weak var newsDate: UILabel!
     @IBOutlet weak var newsDescription: UILabel!
     
+    func updateNewsCell(newsItem: News) {
+        newsImage.image = UIImage(named: newsItem.newsImage)
+        newsTitle.text = newsItem.newsTitle
+        newsDescription.text = newsItem.newsDescription
+        newsDate.text = newsItem.newsTimeStamp
+        newsAuthor.text = newsItem.newsAuthor
+        newsSource.text = newsItem.newsSource
+    }
     
     
     
